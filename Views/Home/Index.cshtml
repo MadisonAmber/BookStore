@@ -8,24 +8,7 @@
 
 @foreach (Book book in Model.Books)
 {
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-8">
-                    <h5 class="card-title">@book.Title</h5>
-                </div>
-                <div class="col-4 text-right">
-                    <p>$@book.Price</p>
-                </div>
-            </div>
-
-            <h6 class="card-subtitle mb-2 text-muted">Written By: @book.Author</h6>
-            <p class="card-text">Pages : @book.PageCount</p>
-
-            <p class="card-text">@book.Category | @book.Publisher | @book.Isbn </p>
-
-        </div>
-    </div>
+    <partial name="BookSummary" model="book" />
 }
 
 <div class="mt-2" page-model="@Model.PageInfo" page-action="Index"></div>
