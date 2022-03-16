@@ -1,5 +1,9 @@
 ﻿@page "/admin"
 
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+
 @model BookStore.Pages.Admin.IndexModel
 @{
 }

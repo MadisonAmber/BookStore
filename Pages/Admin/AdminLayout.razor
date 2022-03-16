@@ -1,7 +1,18 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="bg-info text-white p-2">
-    <span class="navbar-brand m-lg-2">Bookstore Admin</span>
+
+    <div class="container-fluid">
+        @*I fixed the Logout button to be in the center.*@
+        <div class="row" style="align-items: center;">
+            <div class="col">
+                <span class="navbar-brand m-lg-2">Bookstore Admin</span>  
+            </div>
+            <div class="col-2 text-right">
+                <a class="btn btn-danger" href="/Account/Logout">Logout</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container-fluid">
